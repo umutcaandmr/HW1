@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DuyuruEkleActivity">
+
+    <ImageView
+        android:id="@+id/geriButon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/duyuruEKleText"
+        app:layout_constraintTop_toTopOf="@id/duyuruEKleText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/duyuruEKleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:text="@string/addAnnouncement"
+        android:layout_margin="30dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/baslikTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/duyuruEKleText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/title"
+        android:layout_margin="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/baslikEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tarihTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/baslikTextLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/announcementDay"
+        android:layout_margin="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tarihEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="true">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/duyuruAciklamaTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tarihTextLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/announcementDetail"
+        android:layout_margin="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/duyuruAciklamaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="15"
+            android:minLines="1"
+            android:inputType="textMultiLine"
+            android:layout_gravity="center_vertical">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/paylasButon"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/share"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/duyuruAciklamaTextLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        >
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

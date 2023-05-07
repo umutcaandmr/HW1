@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email">E-posta</string>
+    <string name="password">Şifre</string>
+    <string name="ask_account">Hesabın yok mu?</string>
+    <string name="register">Kaydol</string>
+    <string name="login">Giriş Yap</string>
+    <string name="emptyLogin">E-posta ve şifre alanları boş olamaz</string>
+    <string name="emailnotvalid">Lütfen sonu @std.yildiz.edu.tr ile biten okul e-postanızı girin</string>
+    <string name="ara">Mezun ara</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="profil">Profil</string>
+    <string name="duyurular">Duyurular</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Ad</string>
+    <string name="surname">Soyad</string>
+    <string name="confirm_password">Şifreyi Onaylayın</string>
+    <string name="required">Zorunlu*</string>
+    <string name="password_problem">Girdiğiniz şifreler uyuşmuyor</string>
+    <string name="year_error">Lütfen giriş ve mezuniyet yılınızı kontrol edin</string>
+    <string name="updateProfile">Profil Bilgilerini Güncelle</string>
+    <string name="updateEducation">Eğitim Bilgilerini Güncelle</string>
+    <string name="updateContact">İletişim Bilgilerini Güncelle</string>
+    <string name="updateJob">Kariyer Bilgilerini Güncelle</string>
+    <string name="search">Mezun Ara</string>
+    <string name="iletisim">İletişim</string>
+    <string name="profilBilgileri">Profil Bilgileri</string>
+    <string name="successfulRegistration">Kayıt işlemi başarılı!</string>
+    <string name="title">Başlık</string>
+    <string name="date">Tarih</string>
+    <string name="announcementDay">Duyuru tarihi</string>
+    <string name="addAnnouncement">Duyuru Ekle</string>
+    <string name="announcementDetail">Duyuru Detayı</string>
+    <string name="share">Paylaş</string>
+    <string name="save">Kaydet</string>
+    <string name="successfulAnnouncement">Duyuru başarılı bir şekilde paylaşıldı!</string>
+    <string name="addPost">Paylaşım Ekle</string>
+    <string name="successfulPost">Paylaşım işlemi başarılı</string>
+    <string name="egitim">Eğitim Bilgileri</string>
+    <string name="is">İş Bilgileri</string>
+    <string name="sosyal_medya">Sosyal Medya Bilgileri</string>
+    <string name="donem">Dönem</string>
+    <string name="derece">Derece</string>
+    <string name="country">Ülke</string>
+    <string name="city">Şehir</string>
+    <string name="bolum">Bölüm</string>
+    <string name="numara">Telefon Numarası</string>
+    <string name="cikis">Çıkış Yap</string>
+
+</resources>

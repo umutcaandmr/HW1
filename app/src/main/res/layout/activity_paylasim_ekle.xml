@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DuyuruEkleActivity">
+
+    <ImageView
+        android:id="@+id/geriButon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/duyuruEKleText"
+        app:layout_constraintTop_toTopOf="@id/duyuruEKleText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/duyuruEKleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:text="@string/addPost"
+        android:layout_margin="30dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/baslikTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/duyuruEKleText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/baslikEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/paylasButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baslikTextLayout">
+
+    </Button>
+    <ImageView
+        android:id="@+id/fotograf_ekle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/photo_add"
+        app:layout_constraintTop_toBottomOf="@id/baslikTextLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/paylasButon">
+    </ImageView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/paylasimDosyaRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fotograf_ekle"
+            android:layout_margin="16dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

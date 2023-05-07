@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1030404228155",
+    "project_id": "ytu-mezun",
+    "storage_bucket": "ytu-mezun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030404228155:android:e9027ae17696c9830e881e",
+        "android_client_info": {
+          "package_name": "com.umutdemir.ytumezun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030404228155-vu4500a8ie2kp8asoolvd0vvvr3cgnp4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umutdemir.ytumezun",
+            "certificate_hash": "724f4cef5d32eb9acd703fe8dea664c7e9f6f26b"
+          }
+        },
+        {
+          "client_id": "1030404228155-n2nqmjkcutqfgqn1gkqt42b5lv1ulc75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWesGeJLpYeCCixlsB6rjzAq30vBsFu9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030404228155-n2nqmjkcutqfgqn1gkqt42b5lv1ulc75.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

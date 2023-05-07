@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/araCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/recycler_profil_fotografi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_person"
+                android:padding="10dp">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="@id/recycler_profil_fotografi"
+                app:layout_constraintStart_toEndOf="@id/recycler_profil_fotografi"
+                app:layout_constraintBottom_toBottomOf="@id/recycler_profil_fotografi"
+                android:layout_marginStart="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/satir1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/recycler_isim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Umut Can Demir"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/recycler_yil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(2019-2024)"
+                        app:layout_constraintStart_toEndOf="@id/recycler_isim"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="5dp"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/satir2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@id/recycler_profil_fotografi"
+                    app:layout_constraintTop_toBottomOf="@id/satir1">
+
+                    <TextView
+                        android:id="@+id/recycler_bolum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bilgisayar Muhendisligi"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textSize="11sp" />
+                    <TextView
+                        android:id="@+id/recycler_derece"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lisans"
+                        app:layout_constraintStart_toEndOf="@id/recycler_isim"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textSize="11sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/satir3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@id/recycler_profil_fotografi"
+                    app:layout_constraintTop_toBottomOf="@id/satir2">
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/recycler_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="can.demir5@std.yildiz.edu.tr"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
